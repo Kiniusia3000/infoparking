@@ -1,0 +1,141 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+ background-color: #284B63;
+ color: #F4F9E9;
+}
+
+/* styl przycisku */
+.button_style {
+ background-color: #153243;
+ color: #F4F9E9;
+ padding: 14px 32px;
+ font-size: 20px;
+ border: 3px solid #F4F9E9;
+ border-radius: 8px;
+ cursor: pointer;
+}
+
+.register-link,
+.register-link:visited,
+.register-link:hover,
+.register-link:active {
+ color: #F4F9E9;
+}
+
+.github-link,
+.github-link:visited {
+ display: block;
+ align-self: center;
+ width: fit-content;
+ margin: 20px auto 0;
+ background-color: #153243;
+ color: #F4F9E9;
+ border: 2px solid #F4F9E9;
+ border-radius: 8px;
+ padding: 10px 18px;
+ text-decoration: none;
+ font-weight: 600;
+}
+
+.github-link:hover {
+ color: #F4F9E9;
+ opacity: 0.85;
+}
+
+/* formularz */
+form {
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+ max-width: 400px;
+ margin: 0 auto;
+ text-align: center;
+}
+
+input {
+ background-color: #153243;
+ padding: 12px 16px;
+ font-size: 18px;
+ color: #F4F9E9;
+ border: 3px solid #F4F9E9;
+ border-radius: 8px;
+}
+
+.style_around{
+ width: 1000px;
+ margin: 0 auto;
+ padding: 20px;
+ border: 3px solid #F4F9E9;
+ border-radius: 8px;
+ border-radius: 20px;
+}
+
+h1{
+ background-color: #153243;
+ color: #F4F9E9;
+ border-radius: 20px;
+ padding: 8px 12px;
+}
+
+/* obsługa FAQ */
+.faq {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ max-width: 1000px;
+ box-sizing: border-box;
+ border: 1px solid rgba(244, 249, 233, 0.35);
+ border-radius: 8px;
+ background: #153243;
+ padding: 12px 14px;
+ margin: 0 auto 8px;
+}
+
+.faq span {
+ flex: 1;
+ padding-right: 12px;
+}
+
+body > h3 {
+ text-align: center;
+}
+
+.faq button {
+ color: #F4F9E9;
+ width: 32px;
+ height: 32px;
+ border-radius: 50%;
+ border: 1px solid #F4F9E9;
+ background: none;
+ font-size: 20px;
+ cursor: pointer;
+ transition: transform 0.3s ease;
+}
+
+/* transformacja przycisku */
+.faq.open button {
+ transform: rotate(180deg);
+}
+
+.answer {
+ display: grid;
+ grid-template-rows: 0fr;
+ flex-basis: 100%;
+ overflow: hidden;
+ transition: grid-template-rows 0.3s ease;
+}
+
+.faq.open .answer {
+ grid-template-rows: 1fr;
+}
+
+.answer p {
+ min-height: 0;
+ overflow: hidden;
+ margin: 10px 0 0;
+}
